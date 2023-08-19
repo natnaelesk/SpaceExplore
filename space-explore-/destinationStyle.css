@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bellefair', serif;
+}
+
+body{
+    color: #D0D6F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url('assets/destination/background-destination-desktop.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.rap{
+    align-items: end;
+    background-image: url('assets/destination/image-moon.png') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.destin{
+    width: 50%;
+    height: 100%;
+
+}
+.des-nav{
+    width: 100%;
+    height: 20%;
+}
+#moon{
+    justify-content: start;
+    gap: 70px;
+    
+}
+#moon > li{
+    cursor: pointer;
+    font-size: 16px;
+
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    align-items: end;
+    padding-bottom: 10px;
+    border-bottom: 3px solid transparent;
+}
+#moon > li:hover{
+    border-bottom: 3px  solid #a6aabf ;
+}
+h1{
+    margin: 20px 0;
+    font-size: 100px;
+    font-weight: lighter;
+}
+h3 > span{
+    opacity: 0.5;
+    color: #D0D6F9;
+    opacity: 0.5;
+    font-weight: bold;
+}
+h3{
+    opacity: 0.9;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-weight: lighter;
+    width: 75%;
+    margin-bottom: 100px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.det{
+    padding: 10px 0;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #D0D6F9;
+}
+.det  p {
+    margin-top: 20px;
+    width: 110%;
+}
+.det h5{
+
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 28px;
+}
+@media(max-width : 770px ){
+    body{
+        background-image: url('assets/destination/background-destination-tablet.jpg');
+        justify-content: center;
+
+    
+    }
+
+    h1{
+        margin: 20px 0;
+        font-size: 32px;
+       
+        font-weight: lighter;
+    }
+    .des-nav{
+
+       
+        width: 100%;
+        height: 20%;
+    }
+    .destin{
+       
+        width: 90%;
+        height: 50%;
+    
+    }
+    #moon{
+        justify-content: center;
+        gap: 70px;
+        
+    }
+    .rap{
+        width: 100%;
+        height: 50%;
+    }
+    h3{
+        opacity: 0.9;
+        color: white;
+        font-family: 'Barlow', sans-serif;
+        font-weight: lighter;
+        width: 75%;
+        font-size: 16px;
+    }
+    .det{
+        width: 100%;
+    }
+    .det  p {
+        width: 100%;
+    }
+    .det h5{
+        margin-top: 0px;
+        font-size: 16px;
+    }
+}
+@media(max-width : 450px ){
+    body{
+        background: url('assets/destination/background-destination-mobile.jpg') no-repeat;
+        background-size: cover;
+        height: 130vh;
+    }
+    #moon{
+        width: 100vw;
+        gap: 0px;
+        margin: 0;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        list-style: none;
+        list-style-type: none;
+    }
+    #moon > li{ 
+        margin-left: 0%;
+        text-align: center ;
+        gap: 0px;
+        margin: 0px;
+
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        width: 20%;
+        height: 100%;
+        border-bottom: 0px solid transparent;
+        
+    }
+
+    a{
+        align-items: unset;
+        
+    }
+                      
+    #h3{
+        position: unset;
+    }
+
+}
